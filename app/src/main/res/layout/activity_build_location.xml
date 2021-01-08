@@ -326,6 +326,7 @@
             android:layout_marginTop="20dp"
             android:fontFamily="@font/clanmed"
             android:text="Next"
+            android:id="@+id/build_root_next"
             android:textAllCaps="false"
             android:textSize="18dp"
             app:cornerRadius="7dp" />

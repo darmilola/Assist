@@ -26,5 +26,6 @@
     <color name="semi_light_primary">#284A154B</color>
     <color name="white_transparency">#D9FFFFFF</color>
     <color name="blue">#465ED3</color>
+    <color name="special_activity_background">#f4f4f4</color>
 </resources>
 
