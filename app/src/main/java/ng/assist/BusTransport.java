@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import ng.assist.Adapters.BusesAdapter;
 import ng.assist.Adapters.BusesDatesAdapter;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -45,7 +46,12 @@ public class BusTransport extends AppCompatActivity {
 
             stringArrayList.add("");
         }
-        busesAdapter = new BusesAdapter(stringArrayList,this);
+        busesAdapter = new BusesAdapter(stringArrayList, this, new BusesAdapter.BusesClickedListener() {
+            @Override
+            public void onBusCliked() {
+                startActivity(new Intent(BusTransport.this,BusCheckOut.class));
+            }
+        });
         busesDatesAdapter = new BusesDatesAdapter(stringArrayList,this);
 
         busesRecyclerview.setLayoutManager(busesLayoutManager);

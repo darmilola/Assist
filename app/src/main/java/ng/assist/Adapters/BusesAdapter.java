@@ -14,11 +14,16 @@ public class BusesAdapter extends RecyclerView.Adapter<BusesAdapter.itemViewHold
 
     ArrayList<String> busList;
     Context context;
+    public BusesClickedListener busesClickedListener;
+    public interface BusesClickedListener{
+        public void onBusCliked();
+    }
 
 
-    public BusesAdapter(ArrayList<String> busList, Context context){
+    public BusesAdapter(ArrayList<String> busList, Context context,BusesClickedListener busesClickedListener){
         this.busList = busList;
         this.context = context;
+        this.busesClickedListener = busesClickedListener;
     }
 
 
@@ -45,11 +50,13 @@ public class BusesAdapter extends RecyclerView.Adapter<BusesAdapter.itemViewHold
 
         public itemViewHolder(View ItemView){
             super(ItemView);
+            ItemView.setOnClickListener(this);
 
         }
         @Override
         public void onClick(View view) {
 
+            busesClickedListener.onBusCliked();
         }
     }
 }
