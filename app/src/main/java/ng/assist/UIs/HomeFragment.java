@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import ng.assist.Accomodation;
 import ng.assist.GroceryLanding;
 import ng.assist.R;
 import ng.assist.Transportation;
@@ -22,6 +23,7 @@ public class HomeFragment extends Fragment {
     View view;
     LinearLayout transportationLayout;
     LinearLayout groceryLayout;
+    LinearLayout accomodationLayout;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -40,6 +42,7 @@ public class HomeFragment extends Fragment {
     private void initView(){
         transportationLayout = view.findViewById(R.id.home_transportation_layout);
         groceryLayout = view.findViewById(R.id.home_grocery_layout);
+        accomodationLayout = view.findViewById(R.id.home_accomodation_layout);
 
         transportationLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +55,12 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getContext(), GroceryLanding.class));
+            }
+        });
+        accomodationLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), Accomodation.class));
             }
         });
     }

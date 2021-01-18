@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GroceryCart"></activity>
+        <activity android:name=".AccomodationBooking"></activity>
+        <activity android:name=".AccomodationListings" />
+        <activity android:name=".Accomodation" />
+        <activity android:name=".GroceryCart" />
         <activity android:name=".GroceryStoreListing" />
         <activity android:name=".Grocery" />
         <activity android:name=".GroceryLanding" />
