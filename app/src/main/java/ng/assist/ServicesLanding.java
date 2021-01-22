@@ -4,40 +4,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import ng.assist.Adapters.AccomodationListingsAdapter;
+import ng.assist.Adapters.ServicesLandingAdapter;
 
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 
-public class AccomodationListings extends AppCompatActivity {
+public class ServicesLanding extends AppCompatActivity {
 
+    ServicesLandingAdapter adapter;
+    ArrayList<String> servicesLandingList = new ArrayList<>();
     RecyclerView recyclerView;
-    AccomodationListingsAdapter adapter;
-    ArrayList<String> accomdationList = new ArrayList<>();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_accomodation_listings);
+        setContentView(R.layout.activity_services_landing);
         initView();
-    }
-
-    private void initView(){
-
-        recyclerView = findViewById(R.id.accomodation_recyclerview);
-
-        for(int i = 0; i < 20; i++){
-            accomdationList.add("");
-        }
-        adapter = new AccomodationListingsAdapter(accomdationList,AccomodationListings.this);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(adapter);
-
     }
 
     @Override
@@ -45,10 +31,22 @@ public class AccomodationListings extends AppCompatActivity {
 
         super.onResume();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.yellow));
+            getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.transparent));
             // getWindow().setFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS );
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR|View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
             // getWindow().setFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS,WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         }
     }
+    private void initView(){
+        recyclerView = findViewById(R.id.services_landing_recyclerview);
+        for(int i = 0; i < 10; i++){
+            servicesLandingList.add("");
+        }
+        adapter = new ServicesLandingAdapter(servicesLandingList,this);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(adapter);
+    }
+
 }
