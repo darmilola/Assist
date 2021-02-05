@@ -6,10 +6,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import ng.assist.Adapters.ServicesLandingAdapter;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
 import java.util.ArrayList;
@@ -19,6 +21,8 @@ public class ServicesLanding extends AppCompatActivity {
     ServicesLandingAdapter adapter;
     ArrayList<String> servicesLandingList = new ArrayList<>();
     RecyclerView recyclerView;
+    FrameLayout homeServicesLayout;
+    FrameLayout babySittingLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +51,22 @@ public class ServicesLanding extends AppCompatActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+
+        homeServicesLayout = findViewById(R.id.home_services_layout);
+        homeServicesLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ServicesLanding.this,HomeServicesDetails.class));
+            }
+        });
+        babySittingLayout = findViewById(R.id.baby_sitting_layout);
+        babySittingLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ServicesLanding.this,ChildrenServicesDetails.class));
+            }
+        });
+
     }
 
 }

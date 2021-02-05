@@ -30,5 +30,7 @@ dependencies {
     def lottieVersion = "3.4.0"
     implementation "com.airbnb.android:lottie:$lottieVersion"
     implementation 'it.sephiroth.android.library.rangeseekbar:rangeseekbar:1.1.0'
+    implementation 'com.github.stfalcon:chatkit:0.3.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.github.transferwise:sequence-layout:1.1.1'
 }
