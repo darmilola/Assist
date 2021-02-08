@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import ng.assist.UIs.HomeFragment;
+import ng.assist.UIs.Wallet;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 int i = item.getItemId();
                 if (i == R.id.home) {
                     viewPager.setCurrentItem(0, false);
-                } else if (i == R.id.channel) {
+                } else if (i == R.id.wallet) {
                     viewPager.setCurrentItem(1, false);
                 } else if (i == R.id.explore) {
                     viewPager.setCurrentItem(2, false);
@@ -86,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 case 0:
                     return new HomeFragment();
                 case 1:
-                    return new HomeFragment();
+                    return new Wallet();
                 case 2:
                     return new HomeFragment();
                 case 3:
@@ -121,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
 
         adapter.addFragment(new HomeFragment(), "Home");
-        adapter.addFragment(new HomeFragment(), "channels");
+        adapter.addFragment(new Wallet(), "Wallet");
         adapter.addFragment(new HomeFragment(), "explore");
         adapter.addFragment(new HomeFragment(), "Dm");
         viewPager.setAdapter(adapter);
