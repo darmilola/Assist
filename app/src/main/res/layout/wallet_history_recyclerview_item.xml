@@ -37,17 +37,17 @@
                     android:textSize="16dp"
                     android:layout_marginBottom="5dp"
                     android:gravity="center|left"
-                    android:fontFamily="@font/clanmed"
+                    android:fontFamily="@font/clannews"
                     android:textColor="@color/colorPrimary"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="April 5"
-                    android:textSize="12dp"
-                    android:gravity="center|left"
                     android:fontFamily="@font/clannews"
-                    android:textColor="@color/light_text_color"/>
+                    android:gravity="center|left"
+                    android:text="April 5"
+                    android:textColor="#918F8F"
+                    android:textSize="12dp" />
 
             </LinearLayout>
 
@@ -75,19 +75,20 @@
                     android:text="2,500.00"
                     android:textSize="16dp"
                     android:gravity="center"
-                    android:fontFamily="@font/clanmed"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/clannews"
                     android:textColor="@color/colorPrimary"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="BlackHistoryMonth Shop"
-                    android:textSize="15dp"
+                    android:textSize="12dp"
                     android:maxLines="1"
                     android:ellipsize="end"
                     android:gravity="center"
                     android:fontFamily="@font/clannews"
-                    android:textColor="@color/light_text_color"/>
+                    android:textColor="#918F8F"/>
 
             </LinearLayout>
 

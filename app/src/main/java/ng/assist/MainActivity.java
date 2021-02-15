@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+import ng.assist.UIs.AccountFragments;
+import ng.assist.UIs.DmFragment;
 import ng.assist.UIs.HomeFragment;
 import ng.assist.UIs.Wallet;
 
@@ -89,9 +91,9 @@ public class MainActivity extends AppCompatActivity {
                 case 1:
                     return new Wallet();
                 case 2:
-                    return new HomeFragment();
+                    return new DmFragment();
                 case 3:
-                    return new HomeFragment();
+                    return new AccountFragments();
 
 
 
@@ -123,8 +125,8 @@ public class MainActivity extends AppCompatActivity {
 
         adapter.addFragment(new HomeFragment(), "Home");
         adapter.addFragment(new Wallet(), "Wallet");
-        adapter.addFragment(new HomeFragment(), "explore");
-        adapter.addFragment(new HomeFragment(), "Dm");
+        adapter.addFragment(new DmFragment(), "Dm");
+        adapter.addFragment(new AccountFragments(), "Accounts");
         viewPager.setAdapter(adapter);
     }
 
