@@ -16,6 +16,7 @@ import android.widget.LinearLayout;
 
 import ng.assist.Accomodation;
 import ng.assist.GroceryLanding;
+import ng.assist.QuickCreditApplication;
 import ng.assist.R;
 import ng.assist.ServicesLanding;
 import ng.assist.Transportation;
@@ -29,6 +30,7 @@ public class HomeFragment extends Fragment {
     LinearLayout groceryLayout;
     LinearLayout accomodationLayout;
     LinearLayout homeServicesLayout;
+    LinearLayout applyForQucikCredit;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -49,7 +51,14 @@ public class HomeFragment extends Fragment {
         groceryLayout = view.findViewById(R.id.home_grocery_layout);
         accomodationLayout = view.findViewById(R.id.home_accomodation_layout);
         homeServicesLayout = view.findViewById(R.id.home_services_layout);
+        applyForQucikCredit = view.findViewById(R.id.quick_credit_create_application_layout);
 
+        applyForQucikCredit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getContext(), QuickCreditApplication.class));
+            }
+        });
         transportationLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

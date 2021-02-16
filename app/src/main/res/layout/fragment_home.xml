@@ -375,6 +375,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="15dp"
                     android:backgroundTint="@color/white"
+                    android:id="@+id/quick_credit_create_application_layout"
                     android:background="@drawable/apply_for_loans_background">
                   <ImageView
                       android:layout_width="30dp"

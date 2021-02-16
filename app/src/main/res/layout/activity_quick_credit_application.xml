@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/special_activity_background"
-    tools:context=".SendMoney">
+    tools:context=".QuickCreditApplication">
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
@@ -19,26 +19,18 @@
         app:strokeWidth="0.5dp"
         app:cardBackgroundColor="@color/white"
         app:strokeColor="#c8c8c8">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Send Money"
-            android:textColor="@color/colorPrimary"
-            android:textSize="28dp"
-            android:gravity="center"
-            android:fontFamily="@font/clannews"/>
-        <androidx.viewpager.widget.ViewPager
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:id="@+id/send_money_viewpager"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
 
-</LinearLayout>
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:id="@+id/quick_credit_viewpager"/>
+
+        </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
 </LinearLayout>

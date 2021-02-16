@@ -12,6 +12,19 @@
     android:layout_height="wrap_content"
     android:focusableInTouchMode="true"/>
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:scaleType="fitXY"
+        android:layout_gravity="bottom"
+        app:lottie_rawRes="@raw/moneymarketing"/>
+
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/login_email_layout"
         android:layout_width="match_parent"
