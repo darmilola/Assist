@@ -154,7 +154,7 @@
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:id="@+id/service_provider_hireme"
+                android:id="@+id/account_get_verified"
                 android:background="@drawable/print_ticket_background"
                 android:backgroundTint="@color/colorPrimary">
 
@@ -164,7 +164,7 @@
                     android:textSize="17dp"
                     android:gravity="center"
                     android:textColor="@color/colorPrimary"
-                    android:text="Get Verified"
+                    android:text="Awaiting..."
                     android:maxLines="1"
                     android:ellipsize="end"
                     android:fontFamily="@font/clannews"/>
