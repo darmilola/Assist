@@ -18,6 +18,7 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 
 import ng.assist.EditProfileActivity;
 import ng.assist.R;
+import ng.assist.Settings;
 import ng.assist.VerificationDashBoard;
 
 /**
@@ -27,7 +28,7 @@ public class AccountFragments extends Fragment {
 
 
     View view;
-    LinearLayout edittProfile;
+    LinearLayout settingsLayout;
     LinearLayout getVerified;
 
     public AccountFragments() {
@@ -47,19 +48,12 @@ public class AccountFragments extends Fragment {
     }
 
     private void initView() {
-        edittProfile = view.findViewById(R.id.edit_profile_layout);
-        getVerified = view.findViewById(R.id.account_get_verified);
+        settingsLayout = view.findViewById(R.id.settings_layout);
 
-        getVerified.setOnClickListener(new View.OnClickListener() {
+        settingsLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getContext(), VerificationDashBoard.class));
-            }
-        });
-        edittProfile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getContext(), EditProfileActivity.class));
+                startActivity(new Intent(getContext(), Settings.class));
             }
         });
     }

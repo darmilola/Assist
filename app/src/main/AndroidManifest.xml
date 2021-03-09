@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EmployeeVerifications"></activity>
+        <activity android:name=".Settings"></activity>
+        <activity android:name=".EmployeeVerifications" />
         <activity android:name=".ServiceProviderVerifications" />
         <activity android:name=".KopasAidVerifications" />
         <activity android:name=".VerificationDashBoard" />

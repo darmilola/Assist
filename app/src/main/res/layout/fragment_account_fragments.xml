@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:weightSum="5"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="30dp">
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -34,7 +34,7 @@
                 android:layout_marginRight="20dp"
                 android:gravity="center"
                 android:textColor="@color/colorPrimary"
-                android:text="Account"
+                android:text="My Account"
                 android:maxLines="1"
                 android:ellipsize="end"
                 android:fontFamily="@font/clannews"/>
@@ -43,14 +43,14 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:id="@+id/edit_profile_layout"
+            android:id="@+id/settings_layout"
             android:gravity="right|center">
 
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:src="@drawable/settings_1_2x"
                 android:tint="@color/colorPrimary"/>
 
         </LinearLayout>
@@ -86,23 +86,6 @@
             android:src="@drawable/model"
             android:scaleType="centerCrop"/>
     </androidx.cardview.widget.CardView>
-    <LinearLayout
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="10dp"
-        android:layout_gravity="bottom|right"
-        android:gravity="center"
-        android:backgroundTint="@color/colorPrimary"
-        android:background="@drawable/home_skills_background">
-
-        <ImageView
-            android:layout_width="16dp"
-            android:layout_height="16dp"
-            android:layout_gravity="center"
-            android:tint="@color/special_activity_background"
-            android:src="@drawable/iconfinder_icons_photo"/>
-
-    </LinearLayout>
 </FrameLayout>
 
 
@@ -125,7 +108,7 @@
                 android:text="llham Maulana"
                 android:maxLines="1"
                 android:ellipsize="end"
-                android:fontFamily="@font/clannews"/>
+                android:fontFamily="@font/clanbook"/>
 
                 <ImageView
                     android:layout_width="25dp"
@@ -143,40 +126,242 @@
                 android:gravity="center"
                 android:layout_marginTop="5dp"
                 android:textColor="@color/light_text_color"
-                android:text="Software Developer"
+                android:text="Employed"
                 android:maxLines="1"
                 android:ellipsize="end"
                 android:fontFamily="@font/clannews"/>
 
             <LinearLayout
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:id="@+id/account_get_verified"
-                android:background="@drawable/print_ticket_background"
-                android:backgroundTint="@color/colorPrimary">
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:weightSum="5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="17dp"
-                    android:gravity="center"
-                    android:textColor="@color/colorPrimary"
-                    android:text="Awaiting..."
-                    android:maxLines="1"
-                    android:ellipsize="end"
-                    android:fontFamily="@font/clannews"/>
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="19dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/verification_symbol"
+                        android:tint="#454647"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center|left"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Instant Bill Payment"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/clanbook"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical"
+                    android:gravity="right|center">
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="19dp"
+                        android:layout_marginRight="5dp"
+                        android:rotation="180"
+                        android:src="@drawable/iconfinder_chevron_left_4781844"
+                        android:tint="@color/colorPrimary"/>
+                </LinearLayout>
             </LinearLayout>
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:weightSum="5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="19dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/verification_symbol"
+                        android:tint="#454647"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center|left"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Delivery Status"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/clanbook"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical"
+                    android:gravity="right|center">
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="19dp"
+                        android:layout_marginRight="5dp"
+                        android:rotation="180"
+                        android:src="@drawable/iconfinder_chevron_left_4781844"
+                        android:tint="@color/colorPrimary"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:weightSum="5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="19dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/verification_symbol"
+                        android:tint="#454647"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center|left"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Service Check-In"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/clanbook"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical"
+                    android:gravity="right|center">
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="19dp"
+                        android:layout_marginRight="5dp"
+                        android:rotation="180"
+                        android:src="@drawable/iconfinder_chevron_left_4781844"
+                        android:tint="@color/colorPrimary"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:weightSum="5"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="19dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/verification_symbol"
+                        android:tint="#454647"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center|left">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center|left"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Loan Application Status"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/clanbook"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:orientation="vertical"
+                    android:gravity="right|center">
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="19dp"
+                        android:layout_marginRight="5dp"
+                        android:rotation="180"
+                        android:src="@drawable/iconfinder_chevron_left_4781844"
+                        android:tint="@color/colorPrimary"/>
+                </LinearLayout>
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:visibility="gone"
                 android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="match_parent"
