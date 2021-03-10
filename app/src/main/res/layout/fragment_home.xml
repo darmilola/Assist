@@ -36,16 +36,33 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:textColor="@color/White"
-            android:text="Assist.ng"
-            android:gravity="center"
-            android:layout_marginTop="40dp"
-            android:fontFamily="@font/clanbold"
-            />
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="50dp"
+         android:gravity="center">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="30dp"
+             android:textColor="@color/White"
+             android:text="Assist"
+             android:layout_gravity="center|bottom"
+             android:gravity="center"
+             android:fontFamily="@font/clanbold"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="16dp"
+             android:textColor="#1DAF8E"
+             android:text=".ng"
+             android:layout_gravity="center|bottom"
+             android:gravity="center"
+             android:fontFamily="@font/clanbold"/>
+     </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

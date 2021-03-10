@@ -11,7 +11,7 @@
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="600dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         app:cardCornerRadius="5dp"
@@ -27,7 +27,7 @@
 
             <androidx.viewpager.widget.ViewPager
                 android:layout_width="match_parent"
-                android:layout_height="450dp"
+                android:layout_height="600dp"
                 android:id="@+id/quick_credit_viewpager"/>
 
         </LinearLayout>

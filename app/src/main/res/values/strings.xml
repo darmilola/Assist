@@ -9,13 +9,19 @@
     <string-array name="quick_credits_type">
         <item>KopasAids Loans for Corp Members</item>
         <item>Civil Servants Loans</item>
-        <item>Earth</item>
+
     </string-array>
 
     <string-array name="quick_credit_loan_amount">
         <item>NGN10,000</item>
         <item>NGN20,000</item>
         <item>NGN30,000</item>
+    </string-array>
+
+    <string-array name="loan_payback_period">
+        <item>1month</item>
+        <item>2months</item>
+        <item>3months</item>
     </string-array>
 
 </resources>

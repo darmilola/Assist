@@ -14,13 +14,13 @@ import android.widget.ArrayAdapter;
 import com.tiper.MaterialSpinner;
 
 
-public class QuickCreditsApply extends Fragment {
+public class QuickCreditsAmount extends Fragment {
 
 
     View view;
     MaterialSpinner materialSpinner;
     ArrayAdapter<CharSequence> adapter;
-    public QuickCreditsApply() {
+    public QuickCreditsAmount() {
         // Required empty public constructor
     }
 
@@ -29,7 +29,7 @@ public class QuickCreditsApply extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view =  inflater.inflate(R.layout.fragment_quick_credits_apply, container, false);
+        view =  inflater.inflate(R.layout.fragment_quick_credits_amount, container, false);
         initView();
         return  view;
     }

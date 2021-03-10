@@ -6,12 +6,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+import ng.assist.UIs.LoanApply;
 import ng.assist.UIs.QuickCreditsApplicationSuccess;
-import ng.assist.UIs.QuickCreditsApply;
+import ng.assist.UIs.QuickCreditsAmount;
 import ng.assist.UIs.QuickCreditsOccupation;
-import ng.assist.UIs.SendMoneyAmount;
-import ng.assist.UIs.SendMoneyRecepient;
-import ng.assist.UIs.SendMoneySuccess;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -51,12 +49,11 @@ public class QuickCreditApplication extends AppCompatActivity {
             switch (position) {
 
                 case 0:
-                    return new QuickCreditsOccupation();
+                    return new QuickCreditsAmount();
                 case 1:
-                    return new QuickCreditsApply();
+                    return new LoanApply();
                 case 2:
                     return new QuickCreditsApplicationSuccess();
-
             }
             return null;
         }
@@ -82,9 +79,8 @@ public class QuickCreditApplication extends AppCompatActivity {
 
     }
     private void setupViewPager(ViewPager viewPager) {
-
-        adapter.addFragment(new QuickCreditsOccupation(), "Occupation");
-        adapter.addFragment(new QuickCreditsApply(), "Apply");
+        adapter.addFragment(new QuickCreditsAmount(), "Amount");
+        adapter.addFragment(new LoanApply(),"Apply");
         adapter.addFragment(new QuickCreditsApplicationSuccess(), "Success");
         viewPager.setAdapter(adapter);
     }
