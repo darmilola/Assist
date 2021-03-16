@@ -33,7 +33,7 @@ public class BuildLocation extends AppCompatActivity {
         flightBooking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buildFlightActivity();
+               startActivity(new Intent(BuildLocation.this,FlightBooking.class));
             }
         });
 

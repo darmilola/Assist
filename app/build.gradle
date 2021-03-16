@@ -38,4 +38,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
     implementation 'com.github.transferwise:sequence-layout:1.1.1'
     implementation 'com.thefinestartist:finestwebview:1.2.7'
+    implementation 'com.asksira.android:webviewsuite:1.0.3'
 }
