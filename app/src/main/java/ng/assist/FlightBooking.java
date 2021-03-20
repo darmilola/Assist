@@ -5,6 +5,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.webkit.CookieManager;
+
+import android.webkit.WebView;
 
 import com.asksira.webviewsuite.WebViewSuite;
 
@@ -20,6 +23,15 @@ public class FlightBooking extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flight_booking);
         webViewSuite = findViewById(R.id.webViewSuite);
+
+        webViewSuite.interfereWebViewSetup(new WebViewSuite.WebViewSetupInterference() {
+            @Override
+            public void interfereWebViewSetup(WebView webView) {
+                //WebSettings webSettings = webView.getSettings();
+                CookieManager.getInstance().setAcceptThirdPartyCookies(webViewSuite.getWebView(),true);
+
+            }
+        });
     }
 
     @Override
